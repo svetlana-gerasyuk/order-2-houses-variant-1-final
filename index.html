@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Свой дом · каркасные дома и бани в Краснодаре по этапам</title>
+<meta name="description" content="Строительство загородных домов в Краснодаре: пять этапов, смета фиксируется в договоре, оплата каждого этапа после приёмки по акту.">
+<meta name="theme-color" content="#1f2326">
+<meta property="og:title" content="Свой дом · дома в Краснодаре по этапам">
+<meta property="og:description" content="Пять этапов, смета в договоре, оплата после приёмки каждого этапа.">
+<meta property="og:image" content="assets/p-og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%23b8512c%27/%3E%3Cpath d=%27M6 17 16 8l10 9v8H6z%27 fill=%27%23f7f3ec%27/%3E%3C/svg%3E">
+<style>
+  :root {
+    --graphite: #1f2326; --graphite-2: #2c3135; --graphite-3: #3a4045;
+    --paper: #f7f3ec; --paper-2: #eee7db; --white: #fffdf9;
+    --wood: #b48a5a; --wood-d: #84602f;
+    --terra: #b8512c; --terra-d: #9a3f1d; --terra-l: #e9a98c;
+    --ink: #1f2326; --ink-soft: #52575b;
+    --on-dark: #f7f3ec; --on-dark-soft: #cfcac1;
+    --line: rgb(31 35 38 / .16); --line-dark: rgb(247 243 236 / .2);
+    --font: "Manrope", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    --r: 10px; --wrap: 1240px; --gut: clamp(1.1rem, 4vw, 2.5rem);
+    --sec: clamp(3.5rem, 7vw, 6.5rem);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font); font-size: 1.125rem; line-height: 1.6; overflow-x: hidden; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  .wrap { width: min(100% - 2 * var(--gut), var(--wrap)); margin-inline: auto; }
+  .eyebrow { display: inline-flex; align-items: center; gap: .7em; font-size: .85rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--terra); }
+  .eyebrow::before { content: ""; width: 2.2rem; height: 2px; background: currentColor; }
+  h2 { font-size: clamp(2rem, 1.1rem + 3.2vw, 3.6rem); line-height: 1.08; font-weight: 800; letter-spacing: -.025em; text-wrap: balance; }
+  h3 { font-size: 1.35rem; line-height: 1.25; font-weight: 700; letter-spacing: -.01em; }
+  .lead { font-size: clamp(1.1rem, 1rem + .5vw, 1.3rem); line-height: 1.6; color: var(--ink-soft); max-width: 52ch; }
+
+  /* кнопки */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .6em; min-height: 3.5rem; padding: .9rem 1.9rem; border-radius: 999px; border: 2px solid transparent;
+    font: inherit; font-size: 1.05rem; font-weight: 700; text-decoration: none; cursor: pointer; transition: background-color .2s, transform .2s, box-shadow .2s, color .2s, border-color .2s; }
+  .btn--primary { background: var(--terra); color: #fff; box-shadow: 0 10px 28px rgb(184 81 44 / .4); }
+  .btn--primary:hover { background: var(--terra-d); transform: translateY(-2px); box-shadow: 0 14px 34px rgb(184 81 44 / .5); }
+  .btn--ghost { color: var(--on-dark); border-color: rgb(247 243 236 / .55); background: rgb(31 35 38 / .25); backdrop-filter: blur(6px); }
+  .btn--ghost:hover { background: var(--on-dark); color: var(--graphite); }
+  .btn svg { width: 1.15em; height: 1.15em; transition: transform .2s; }
+  .btn:hover svg { transform: translateX(3px); }
+  .btn:focus-visible, a:focus-visible { outline: 3px solid var(--wood); outline-offset: 3px; }
+
+  /* шапка */
+  .head { position: fixed; z-index: 50; inset: 0 0 auto 0; transition: background-color .3s, box-shadow .3s, padding .3s; padding-block: 1.1rem; }
+  .head.is-solid { background: rgb(31 35 38 / .94); backdrop-filter: blur(10px); box-shadow: 0 1px 0 var(--line-dark); padding-block: .6rem; }
+  .head__in { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+  .logo { display: inline-flex; align-items: center; gap: .6rem; font-size: 1.3rem; font-weight: 800; letter-spacing: -.02em; text-decoration: none; color: var(--on-dark); }
+  .logo i { width: 2.1rem; height: 2.1rem; border-radius: 8px; background: var(--terra); display: grid; place-items: center; }
+  .logo i svg { width: 1.3rem; height: 1.3rem; fill: var(--paper); }
+  .nav { display: flex; align-items: center; gap: clamp(1rem, 2.6vw, 2.4rem); }
+  .nav a:not(.btn) { color: var(--on-dark); text-decoration: none; font-weight: 600; font-size: 1rem; opacity: .9; padding: .5rem 0; border-bottom: 2px solid transparent; }
+  .nav a:not(.btn):hover { opacity: 1; border-color: var(--terra-l); }
+  .head .btn { min-height: 2.9rem; padding: .55rem 1.35rem; font-size: 1rem; }
+
+  /* первый экран */
+  .hero { position: relative; min-height: 100svh; display: flex; flex-direction: column; justify-content: flex-end; color: var(--on-dark); background: var(--graphite); overflow: hidden; isolation: isolate; }
+  .hero__bg { position: absolute; inset: -4% 0 0; z-index: -2; }
+  .hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%; }
+  .hero::before { content: ""; position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(90deg, rgb(24 28 31 / .92) 0%, rgb(24 28 31 / .78) 34%, rgb(24 28 31 / .3) 62%, rgb(24 28 31 / .05) 100%),
+                linear-gradient(0deg, rgb(24 28 31 / .85) 0%, rgb(24 28 31 / 0) 38%), linear-gradient(180deg, rgb(24 28 31 / .6) 0%, rgb(24 28 31 / 0) 22%); }
+  .hero__body { padding-top: clamp(6.5rem, 13vh, 9rem); padding-bottom: clamp(1.5rem, 4vh, 2.5rem); }
+  .hero .eyebrow { color: var(--terra-l); margin-bottom: 1.4rem; }
+  .hero h1 { font-size: clamp(2.5rem, 1rem + 4.4vw, 4.9rem); line-height: 1.02; font-weight: 800; letter-spacing: -.035em; max-width: 15ch; text-wrap: balance; }
+  .hero h1 em { font-style: normal; color: var(--terra-l); }
+  .hero__lead { margin-top: 1.3rem; font-size: clamp(1.15rem, 1rem + .7vw, 1.4rem); line-height: 1.55; max-width: 36ch; color: #ece7de; }
+  .hero__lead b { color: #fff; font-weight: 700; }
+  .hero__cta { margin-top: 1.8rem; display: flex; flex-wrap: wrap; gap: 1rem; }
+  .hero__facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: clamp(1.6rem, 4vh, 2.6rem); background: var(--line-dark); border-radius: var(--r); overflow: hidden; backdrop-filter: blur(10px); }
+  .hero__facts li { background: rgb(31 35 38 / .62); padding: .9rem 1.4rem 1rem; display: grid; gap: .15rem; }
+  .hero__facts b { font-size: clamp(1.5rem, 1.1rem + 1.2vw, 2.1rem); font-weight: 800; letter-spacing: -.02em; color: #fff; line-height: 1.1; }
+  .hero__facts b i { font-style: normal; color: var(--terra-l); }
+  .hero__facts span { font-size: 1rem; color: var(--on-dark-soft); line-height: 1.4; }
+  .ai-tag { position: absolute; right: var(--gut); top: 6.2rem; z-index: 2; font-size: .875rem; font-weight: 600; padding: .35rem .8rem; border-radius: 999px; background: rgb(31 35 38 / .55); color: var(--on-dark-soft); backdrop-filter: blur(6px); }
+
+  /* принципы */
+  .sec { padding-block: var(--sec); }
+  .why { background: var(--paper); }
+  .why__grid { display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(2rem, 6vw, 5.5rem); align-items: start; }
+  .why__intro h2 { margin-top: 1.1rem; }
+  .why__intro .lead { margin-top: 1.5rem; }
+  .why__cards { display: grid; gap: 1.1rem; }
+  .card { background: var(--white); border: 1px solid var(--line); border-radius: var(--r); padding: 1.6rem 1.7rem; display: grid; grid-template-columns: auto 1fr; gap: .5rem 1.4rem; align-items: start; box-shadow: 0 8px 30px rgb(31 35 38 / .05); }
+  .card__ic { grid-row: 1 / span 2; width: 3.4rem; height: 3.4rem; border-radius: 12px; background: var(--paper-2); color: var(--terra); display: grid; place-items: center; }
+  .card__ic svg { width: 1.8rem; height: 1.8rem; }
+  .card small { display: block; font-size: .9rem; font-weight: 700; color: var(--wood-d); letter-spacing: .02em; margin-bottom: .2rem; }
+  .card p { color: var(--ink-soft); font-size: 1.05rem; }
+
+  /* этапы */
+  .stages-head { padding-top: 0; padding-bottom: clamp(1.5rem, 3vw, 2.5rem); background: var(--paper); }
+  .stages-head__row { display: flex; justify-content: space-between; align-items: end; gap: 2rem; flex-wrap: wrap; }
+  .stages-head h2 { margin-top: 1.1rem; max-width: 16ch; }
+  .stages-head .lead { max-width: 40ch; }
+  .stage { padding-block: clamp(2.5rem, 5vw, 4.5rem); background: var(--paper); }
+  .stage--dark { background: var(--graphite); color: var(--on-dark); }
+  .stage--tint { background: var(--paper-2); }
+  .stage__grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(1.8rem, 5vw, 4.5rem); align-items: center; }
+  .stage--flip .stage__fig { order: 2; }
+  .stage__fig { position: relative; }
+  .stage__fig .ph { overflow: hidden; border-radius: var(--r); aspect-ratio: 3 / 2; background: var(--graphite-2); box-shadow: 0 24px 60px rgb(31 35 38 / .22); }
+  .stage__fig img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s cubic-bezier(.2, .7, .2, 1); }
+  .stage__fig:hover img { transform: scale(1.04); }
+  .stage__fig figcaption { position: absolute; z-index: 2; top: .9rem; left: .9rem; font-size: .875rem; font-weight: 600; padding: .3rem .75rem; border-radius: 999px; background: rgb(31 35 38 / .62); color: var(--on-dark); backdrop-filter: blur(6px); }
+  .stage__num { position: absolute; z-index: 2; left: -.04em; bottom: -.32em; font-size: clamp(6rem, 4rem + 9vw, 11.5rem); line-height: .8; font-weight: 800; letter-spacing: -.06em; color: var(--terra); text-shadow: 0 6px 30px rgb(31 35 38 / .25); pointer-events: none; }
+  .stage--flip .stage__num { left: auto; right: -.04em; }
+  .stage__copy .eyebrow { margin-bottom: 1rem; }
+  .stage__copy h3 { font-size: clamp(1.7rem, 1.2rem + 1.8vw, 2.5rem); line-height: 1.12; font-weight: 800; letter-spacing: -.02em; text-wrap: balance; }
+  .stage__copy > p { margin-top: 1.1rem; font-size: 1.15rem; color: var(--ink-soft); max-width: 46ch; }
+  .stage--dark .stage__copy > p { color: var(--on-dark-soft); }
+  .stage--dark .eyebrow { color: var(--terra-l); }
+  .details { margin-top: 1.7rem; display: grid; gap: .75rem; }
+  .details li { display: grid; grid-template-columns: 7.2rem 1fr; gap: .2rem 1.1rem; padding: .95rem 1.15rem; border-radius: 8px; background: var(--white); border: 1px solid var(--line); font-size: 1.0625rem; line-height: 1.5; }
+  .details li b { font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; color: var(--terra); padding-top: .12rem; }
+  .stage--tint .details li { background: var(--paper); }
+  .stage--dark .details li { background: rgb(247 243 236 / .06); border-color: var(--line-dark); color: var(--on-dark); }
+  .stage--dark .details li b { color: var(--terra-l); }
+
+  /* призыв */
+  .band { background: var(--terra); color: #fff; padding-block: clamp(2.2rem, 4vw, 3.2rem); }
+  .band__in { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem 3rem; flex-wrap: wrap; }
+  .band p { font-size: clamp(1.4rem, 1rem + 1.6vw, 2.2rem); line-height: 1.2; font-weight: 800; letter-spacing: -.02em; max-width: 26ch; text-wrap: balance; }
+  .band .btn { background: var(--graphite); color: #fff; box-shadow: none; }
+  .band .btn:hover { background: #000; }
+  .nature { background: var(--paper-2); padding-block: var(--sec); }
+  .nature__grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+  .nature__fig { margin: 0; }
+  .nature__fig .ph { overflow: hidden; border-radius: var(--r); aspect-ratio: 16 / 10; background: var(--graphite-2); box-shadow: 0 24px 60px rgb(31 35 38 / .18); }
+  .nature__fig img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
+  .nature__fig figcaption { margin-top: .9rem; font-size: .9rem; color: var(--ink-soft); }
+  .nature__copy .eyebrow { margin-bottom: 1.1rem; }
+  .nature__copy h2 { font-size: clamp(2rem, 1.2rem + 2.6vw, 3.2rem); }
+  .nature__copy p { margin-top: 1.4rem; font-size: clamp(1.1rem, 1rem + .5vw, 1.3rem); line-height: 1.6; color: var(--ink-soft); max-width: 36ch; }
+  .nature__copy p b { color: var(--ink); font-weight: 700; }
+  @media (max-width: 860px) {
+    .nature__grid { grid-template-columns: 1fr; }
+    .nature__fig .ph { aspect-ratio: 4 / 3; }
+  }
+
+  /* смета */
+  .estimate { background: var(--paper); }
+  .estimate__top { display: grid; grid-template-columns: 1fr 1.05fr; gap: clamp(1.8rem, 5vw, 4.5rem); align-items: center; margin-bottom: clamp(2rem, 4vw, 3.2rem); }
+  .estimate__top h2 { margin-top: 1.1rem; }
+  .estimate__top .lead { margin-top: 1.3rem; }
+  .estimate__top .ph { border-radius: var(--r); overflow: hidden; aspect-ratio: 3 / 2; box-shadow: 0 24px 60px rgb(31 35 38 / .22); }
+  .estimate__top img { width: 100%; height: 100%; object-fit: cover; object-position: 35% 50%; }
+  .items { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .item { background: var(--white); border: 1px solid var(--line); border-radius: var(--r); padding: 1.4rem 1.4rem 1.5rem; display: grid; gap: .55rem; align-content: start; transition: transform .25s, box-shadow .25s; }
+  .item:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgb(31 35 38 / .1); }
+  .item span { font-size: 1.9rem; font-weight: 800; letter-spacing: -.03em; color: var(--wood); line-height: 1; }
+  .item h3 { font-size: 1.15rem; }
+  .item p { font-size: 1.0625rem; color: var(--ink-soft); line-height: 1.5; }
+  .item--accent { background: var(--graphite); border-color: var(--graphite); color: var(--on-dark); }
+  .item--accent span { color: var(--terra-l); }
+  .item--accent p { color: var(--on-dark-soft); }
+
+  /* как начинаем */
+  .steps { background: var(--graphite); color: var(--on-dark); }
+  .steps h2 { margin-top: 1.1rem; max-width: 18ch; }
+  .steps .eyebrow { color: var(--terra-l); }
+  .steps__row { margin-top: clamp(2rem, 4vw, 3rem); display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; counter-reset: s; }
+  .step { position: relative; padding: 1.7rem 1.5rem 1.6rem; border-radius: var(--r); background: var(--graphite-2); border: 1px solid var(--line-dark); }
+  .step b { display: block; font-size: 2.6rem; line-height: 1; font-weight: 800; letter-spacing: -.04em; color: var(--terra); margin-bottom: 1.1rem; }
+  .step h3 { font-size: 1.25rem; }
+  .step p { margin-top: .6rem; font-size: 1.0625rem; color: var(--on-dark-soft); line-height: 1.5; }
+
+  /* финал */
+  .final { position: relative; isolation: isolate; color: var(--on-dark); padding-block: var(--sec); overflow: hidden; background: var(--graphite); }
+  .final__bg { position: absolute; inset: 0; z-index: -2; }
+  .final__bg img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+  .final::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgb(24 28 31 / .94) 0%, rgb(24 28 31 / .8) 50%, rgb(24 28 31 / .55) 100%); }
+  .final__grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+  .final .eyebrow { color: var(--terra-l); }
+  .final h2 { margin-top: 1.1rem; color: #fff; }
+  .final .lead { margin-top: 1.4rem; color: #e1dcd3; }
+  .final .btn { margin-top: 2rem; }
+  .contact { background: rgb(247 243 236 / .08); border: 1px solid var(--line-dark); backdrop-filter: blur(12px); border-radius: var(--r); padding: clamp(1.4rem, 3vw, 2.2rem); display: grid; gap: 1.2rem; }
+  .contact div { display: grid; gap: .15rem; padding-bottom: 1.2rem; border-bottom: 1px solid var(--line-dark); }
+  .contact div:last-child { border: 0; padding: 0; }
+  .contact small { font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; color: var(--terra-l); }
+  .contact span { font-size: 1.2rem; font-weight: 600; color: #fff; }
+  .contact span.is-slot { font-weight: 500; color: var(--on-dark-soft); font-size: 1.05rem; }
+
+  .foot { background: #15181a; color: var(--on-dark-soft); padding-block: 1.8rem; font-size: .95rem; line-height: 1.55; }
+  .foot__in { display: flex; justify-content: space-between; gap: 1rem 3rem; flex-wrap: wrap; }
+  .foot p { max-width: 62ch; }
+
+  /* появление */
+  .js .rv { opacity: 0; transform: translateY(26px); transition: opacity .8s cubic-bezier(.2, .7, .2, 1), transform .8s cubic-bezier(.2, .7, .2, 1); }
+  .js .rv.in { opacity: 1; transform: none; }
+  .js .rv.d1 { transition-delay: .08s; } .js .rv.d2 { transition-delay: .16s; } .js .rv.d3 { transition-delay: .24s; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .js .rv { opacity: 1; transform: none; transition: none; } .stage__fig img, .btn { transition: none; } }
+
+  @media (max-width: 1060px) {
+    .items { grid-template-columns: repeat(2, 1fr); }
+    .steps__row { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 860px) {
+    body { font-size: 1.0625rem; }
+    .nav a:not(.btn) { display: none; }
+    .why__grid, .stage__grid, .estimate__top, .final__grid { grid-template-columns: 1fr; }
+    .stage--flip .stage__fig { order: 0; }
+    .stage__num { left: .5rem; bottom: -.28em; font-size: clamp(5rem, 28vw, 8rem); }
+    .stage--flip .stage__num { right: auto; left: .5rem; }
+    .stage__copy { padding-top: 1.4rem; }
+    .hero { min-height: 0; justify-content: flex-start; }
+    .hero__bg { inset: 0 0 auto 0; height: 62svh; }
+    .hero__bg img { object-position: 60% 50%; }
+    .hero::before { height: calc(62svh + 2px); bottom: auto; background: linear-gradient(180deg, rgb(24 28 31 / .6) 0%, rgb(24 28 31 / 0) 24%, rgb(24 28 31 / 0) 40%, var(--graphite) 99%); }
+    .hero__body { padding-top: 40svh; padding-bottom: 1.8rem; }
+    .hero__facts { grid-template-columns: 1fr; }
+    .hero__facts li { padding: .85rem 1.1rem; grid-template-columns: auto 1fr; align-items: center; gap: 1rem; }
+    .hero__facts b { min-width: 4.6rem; font-size: 1.5rem; }
+    .ai-tag { top: 5.1rem; }
+    .final::before { background: linear-gradient(0deg, rgb(24 28 31 / .93), rgb(24 28 31 / .8)); }
+  }
+  @media (max-width: 560px) {
+    .btn { width: 100%; }
+    .head .btn { width: auto; padding-inline: 1.05rem; font-size: .95rem; }
+    .logo { font-size: 1.15rem; }
+    .details li { grid-template-columns: 1fr; gap: .25rem; }
+    .items, .steps__row { grid-template-columns: 1fr; }
+    .card { grid-template-columns: 1fr; }
+    .card__ic { grid-row: auto; }
+    .hero__cta { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<header class="head" id="head">
+  <div class="wrap head__in">
+    <a class="logo" href="#top" aria-label="Свой дом, наверх"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12 12 3l10 9v9H2z"/></svg></i>Свой дом</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#why">Подход</a>
+      <a href="#etapy">Этапы</a>
+      <a href="#smeta">Смета</a>
+      <a href="#start">Как начать</a>
+      <a class="btn btn--primary" href="#raschet">Рассчитать смету</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ПЕРВЫЙ ЭКРАН -->
+  <section class="hero" aria-label="Свой дом">
+    <div class="hero__bg" id="heroBg"><img src="assets/p-hero.webp" alt="Одноэтажный дом с террасой и деревянной отделкой на закате. ИИ-визуализация" width="1920" height="1187" fetchpriority="high"></div>
+    <span class="ai-tag">ИИ-визуализация</span>
+    <div class="wrap hero__body">
+      <span class="eyebrow">Загородные дома · Краснодар</span>
+      <h1>Каркасные дома в&nbsp;Краснодаре&nbsp;– <em>каждый этап под вашим контролем</em></h1>
+      <p class="hero__lead">От фундамента до сдачи дома – каждый этап строительства под вашим контролем. <b>Договор и смета до первого платежа.</b></p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#raschet">Рассчитать смету <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--ghost" href="#etapy">Посмотреть этапы</a>
+      </div>
+      <ul class="hero__facts">
+        <li><b><i>5</i> этапов</b><span>у каждого свой акт приёмки</span></li>
+        <li><b>Оплата</b><span>каждого этапа после приёмки</span></li>
+        <li><b>Смета</b><span>фиксируется в договоре</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ПОДХОД -->
+  <section class="sec why" id="why">
+    <div class="wrap why__grid">
+      <div class="why__intro rv">
+        <span class="eyebrow">Подход</span>
+        <h2>Строим по договору, а не «на словах»</h2>
+        <p class="lead">Покупка дома – это долгое решение для семьи. Поэтому каждый этап виден заранее: что делаем, как принимаете и когда платите.</p>
+      </div>
+      <div class="why__cards">
+        <article class="card rv d1">
+          <span class="card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg></span>
+          <div><small>Страшно, что бросят на полпути</small><h3>Оплата по этапам</h3></div>
+          <p>Платите за готовый этап после подписания акта, а не вперёд за весь дом.</p>
+        </article>
+        <article class="card rv d2">
+          <span class="card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span>
+          <div><small>Страшно, что смета вырастет</small><h3>Смета в договоре</h3></div>
+          <p>Позиции с материалами и объёмами – приложение к договору. Меняется только по допсоглашению.</p>
+        </article>
+        <article class="card rv d3">
+          <span class="card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+          <div><small>Страшно от «сроков плюс-минус год»</small><h3>Сроки в календарных днях</h3></div>
+          <p>Срок каждого этапа записан в договоре, а стройку показываем, а не рендеры.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЭТАПЫ -->
+  <section class="stages-head" id="etapy">
+    <div class="wrap stages-head__row">
+      <div class="rv"><span class="eyebrow">Этапы стройки</span><h2>Пять этапов – пять актов приёмки</h2></div>
+      <p class="lead rv d1">Каждый этап – отдельная глава: что делаем, как принимаете и когда следующий платёж.</p>
+    </div>
+  </section>
+
+  <article class="stage">
+    <div class="wrap stage__grid">
+      <figure class="stage__fig rv">
+        <div class="ph"><img src="assets/p-1.webp" alt="Ленточный фундамент с арматурой на участке. ИИ-визуализация" width="1400" height="804" style="object-position:35% 50%" loading="lazy"></div>
+        <span class="stage__num" aria-hidden="true">01</span>
+        <figcaption>ИИ-визуализация этапа</figcaption>
+      </figure>
+      <div class="stage__copy rv d1">
+        <span class="eyebrow">Этап 1 из 5</span>
+        <h3>Фундамент: лента или сваи – по грунту, а не по привычке</h3>
+        <p>Перед сметой смотрим участок: грунт и уклон. Тип основания объясняем письменно: почему так и сколько стоит.</p>
+        <ul class="details">
+          <li><b>Делаем</b><span>Разметка, выемка грунта, опалубка, армирование, бетон, гидроизоляция.</span></li>
+          <li><b>Приёмка</b><span>Акт по фундаменту: геометрия, отметки, фото.</span></li>
+          <li><b>Срок</b><span>Записан в договоре в календарных днях.</span></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <article class="stage stage--dark stage--flip">
+    <div class="wrap stage__grid">
+      <figure class="stage__fig rv">
+        <div class="ph"><img src="assets/p-2.webp" alt="Деревянный каркас дома из бруса на фоне неба. ИИ-визуализация" width="1400" height="757" style="object-position:50% 45%" loading="lazy"></div>
+        <span class="stage__num" aria-hidden="true">02</span>
+        <figcaption>ИИ-визуализация этапа</figcaption>
+      </figure>
+      <div class="stage__copy rv d1">
+        <span class="eyebrow">Этап 2 из 5</span>
+        <h3>Коробка: каркас без «по месту»</h3>
+        <p>Стойки, обвязка и перекрытия из сухого строганого бруса. Сечение и шаг стоек записаны в смете.</p>
+        <ul class="details">
+          <li><b>Делаем</b><span>Каркас, обвязка, стены, перекрытия.</span></li>
+          <li><b>Приёмка</b><span>Акт по коробке: геометрия, крепёж, влажность древесины.</span></li>
+          <li><b>Оплата</b><span>Платёж за этап – после подписи акта, не вперёд.</span></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <article class="stage">
+    <div class="wrap stage__grid">
+      <figure class="stage__fig rv">
+        <div class="ph"><img src="assets/p-3.webp" alt="Металлочерепица, дымоход и стропила крупным планом. ИИ-визуализация" width="1400" height="732" style="object-position:60% 50%" loading="lazy"></div>
+        <span class="stage__num" aria-hidden="true">03</span>
+        <figcaption>ИИ-визуализация этапа</figcaption>
+      </figure>
+      <div class="stage__copy rv d1">
+        <span class="eyebrow">Этап 3 из 5</span>
+        <h3>Кровля: тёплый контур закрыт</h3>
+        <p>Кровельный пирог собираем полностью: пароизоляция, утеплитель, мембрана, вентзазор. Только потом – покрытие.</p>
+        <ul class="details">
+          <li><b>Делаем</b><span>Стропила, обрешётка, кровельный пирог, покрытие, водосток.</span></li>
+          <li><b>Приёмка</b><span>Акт по кровле: примыкания, уклоны водостока, фото каждого ската.</span></li>
+          <li><b>В смете</b><span>Марка металлочерепицы и толщина утеплителя.</span></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <article class="stage stage--dark stage--flip">
+    <div class="wrap stage__grid">
+      <figure class="stage__fig rv">
+        <div class="ph"><img src="assets/p-4.webp" alt="Светлая комната с большими окнами после отделки. ИИ-визуализация" width="1400" height="680" style="object-position:30% 50%" loading="lazy"></div>
+        <span class="stage__num" aria-hidden="true">04</span>
+        <figcaption>ИИ-визуализация этапа</figcaption>
+      </figure>
+      <div class="stage__copy rv d1">
+        <span class="eyebrow">Этап 4 из 5</span>
+        <h3>Отделка: всё по смете, изменения – по допсоглашению</h3>
+        <p>Каждая позиция названа в смете. Захотели заменить материал? Считаем разницу, подписываем допсоглашение, и только потом делаем.</p>
+        <ul class="details">
+          <li><b>Делаем</b><span>Утепление, обшивка снаружи и внутри, полы, электрика, вода, отопление.</span></li>
+          <li><b>Приёмка</b><span>Акт по отделке: инженерия под нагрузкой, ровность стен.</span></li>
+          <li><b>Изменения</b><span>Только письменно, с пересчётом разницы.</span></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <article class="stage stage--tint">
+    <div class="wrap stage__grid">
+      <figure class="stage__fig rv">
+        <div class="ph"><img src="assets/p-5.webp" alt="Готовый дом с террасой, на переднем плане чертежи и ручка. ИИ-визуализация" width="1600" height="610" style="object-position:48% 50%" loading="lazy"></div>
+        <span class="stage__num" aria-hidden="true">05</span>
+        <figcaption>ИИ-визуализация этапа</figcaption>
+      </figure>
+      <div class="stage__copy rv d1">
+        <span class="eyebrow">Этап 5 из 5</span>
+        <h3>Сдача по акту: принимаете дом, а не «почти готово»</h3>
+        <p>Финальный обход вместе. Замечания записываем в акт, устраняем, и только потом подписываем сдачу.</p>
+        <ul class="details">
+          <li><b>Документы</b><span>Договор, смета, акты по этапам, паспорта на материалы и оборудование.</span></li>
+          <li><b>Оплата</b><span>Последний платёж – после подписания акта сдачи.</span></li>
+          <li><b>Принцип</b><span>Ни один этап не оплачивается вперёд.</span></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- БЛОК О ПРИРОДЕ (авторское фото) -->
+  <section class="nature" aria-label="Свой дом – ближе к природе">
+    <div class="wrap nature__grid">
+      <figure class="nature__fig rv">
+        <div class="ph"><img src="assets/nature.webp" alt="Авторское фото природы" width="1600" height="899" loading="lazy"></div>
+        <figcaption>Авторское фото природы · иллюстрация загородной жизни</figcaption>
+      </figure>
+      <div class="nature__copy rv d1">
+        <span class="eyebrow">Загородная жизнь</span>
+        <h2>Свой дом – ближе к природе</h2>
+        <p>Загородный дом – это не только квадратные метры. Это пространство для отдыха, тишины и простых моментов, ради которых хочется возвращаться домой.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПРИЗЫВ -->
+  <section class="band" aria-label="Рассчитать смету">
+    <div class="wrap band__in">
+      <p class="rv">Пять этапов прочитали. Считать смету можно уже сейчас.</p>
+      <a class="btn rv d1" href="#raschet">Рассчитать смету</a>
+    </div>
+  </section>
+
+  <!-- СМЕТА -->
+  <section class="sec estimate" id="smeta">
+    <div class="wrap">
+      <div class="estimate__top">
+        <div class="rv">
+          <span class="eyebrow">Смета</span>
+          <h2>Что входит в смету</h2>
+          <p class="lead">Смета – приложение к договору. В ней позиции с марками материалов и объёмами, а не «строительство дома, одна штука». Итог фиксируется и меняется только допсоглашением.</p>
+        </div>
+        <figure class="rv d1"><div class="ph"><img src="assets/p-smeta.webp" alt="Чертежи, рулетка и калькулятор на столе: расчёт сметы. ИИ-визуализация" width="1500" height="598" loading="lazy"></div></figure>
+      </div>
+      <ul class="items">
+        <li class="item rv"><span>01</span><h3>Выезд и обмер</h3><p>Грунт, уклон, подъезд для техники.</p></li>
+        <li class="item rv d1"><span>02</span><h3>Проект и спецификация</h3><p>Планировки, разрезы, узлы, ведомость материалов.</p></li>
+        <li class="item rv d2"><span>03</span><h3>Материалы с марками</h3><p>Брус, OSB-3, утеплитель, мембраны, металлочерепица, окна: марка, толщина, объём.</p></li>
+        <li class="item rv d3"><span>04</span><h3>Работы по этапам</h3><p>Каждый этап отдельной суммой: видно, за что платите после акта.</p></li>
+        <li class="item rv"><span>05</span><h3>Доставка и разгрузка</h3><p>Материалы на участок и вывоз строительного мусора.</p></li>
+        <li class="item rv d1"><span>06</span><h3>Инженерия</h3><p>Электрика, вода, отопление, вентиляция по проекту.</p></li>
+        <li class="item rv d2"><span>07</span><h3>Что не входит</h3><p>Отдельным списком: подключение к сетям, ландшафт, мебель. Без сюрпризов.</p></li>
+        <li class="item item--accent rv d3"><span>08</span><h3>Цены – при расчёте</h3><p>Дом 6×6, дом 8×8 и баня 4×6: стоимость каждого проекта уточняем при расчёте по вашему участку.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- КАК НАЧАТЬ -->
+  <section class="sec steps" id="start">
+    <div class="wrap">
+      <span class="eyebrow rv">Как начать</span>
+      <h2 class="rv d1">Четыре шага до договора</h2>
+      <ol class="steps__row">
+        <li class="step rv"><b>01</b><h3>Заявка или звонок</h3><p>Уточним участок, размеры и что уже есть: проект, эскиз или только идея.</p></li>
+        <li class="step rv d1"><b>02</b><h3>Выезд на участок</h3><p>Смотрим грунт, уклон и подъезд для техники.</p></li>
+        <li class="step rv d2"><b>03</b><h3>Смета по пяти этапам</h3><p>Каждый этап отдельной суммой, материалы с марками.</p></li>
+        <li class="step rv d3"><b>04</b><h3>Договор</h3><p>Смета в приложении, сроки в календарных днях, оплата этапа после акта.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- РАСЧЁТ -->
+  <section class="final" id="raschet">
+    <div class="final__bg"><img src="assets/p-cta.webp" alt="Участок с туями и забором на закате. ИИ-визуализация" width="1920" height="685" loading="lazy"></div>
+    <div class="wrap final__grid">
+      <div class="rv">
+        <span class="eyebrow">Расчёт</span>
+        <h2>Смета по вашему проекту</h2>
+        <p class="lead">Пришлите проект или размеры участка и дома. Уточним детали и подготовим смету с разбивкой по пяти этапам. Цену за м² назовём по типовому проекту при расчёте.</p>
+        <a class="btn btn--primary" href="#raschet">Рассчитать смету <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <!-- слоты заказчика: {{телефон}}, {{адрес}}, {{ссылка-telegram}}, {{ссылка-whatsapp}}, {{ссылка-max}}, {{ссылка-расчёта}} (форма или мессенджер) -->
+      <div class="contact rv d1">
+        <div><small>Город</small><span>Краснодар</span></div>
+        <div><small>Телефон</small><span class="is-slot" data-slot="телефон">будет указан после согласования</span></div>
+        <div><small>Адрес</small><span class="is-slot" data-slot="адрес">будет указан после согласования</span></div>
+        <div><small>Мессенджеры</small><span class="is-slot" data-slot="мессенджеры">Telegram, WhatsApp, MAX – после согласования</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p>Свой дом · строительство загородных домов · Краснодар. Все изображения на странице – учебные ИИ-визуализации, а не фото реальных объектов компании.</p>
+    <!-- слоты: {{юрлицо}}, {{ИНН}}, {{ссылка-политика}} -->
+    <p data-slot="реквизиты">Реквизиты и политика обработки данных – после согласования с заказчиком.</p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var d = document.documentElement; d.classList.add('js');
+    var head = document.getElementById('head');
+    var bg = document.getElementById('heroBg');
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function onScroll() {
+      var y = window.scrollY || 0;
+      head.classList.toggle('is-solid', y > 40);
+      if (!reduce && bg && y < window.innerHeight) bg.style.transform = 'translate3d(0,' + (y * 0.18).toFixed(1) + 'px,0)';
+    }
+    onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+    var els = [].slice.call(document.querySelectorAll('.rv'));
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
+</body>
+</html>
